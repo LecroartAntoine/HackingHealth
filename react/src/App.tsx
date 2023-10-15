@@ -6,8 +6,10 @@ import ChatArea from './ChatArea';
 import Quiz from './Quiz';
 import WelcomePage from './WelcomePage';
 import Info from './Info';
+import Options from './Options';
 
 const App = () => {
+  <Quiz />
   const [current, setCurrent] = useState<string>('accueil'); // Specify string type for 'current'
 
   const handleMenuClick = (key: string) => { // Specify string type for 'key'
