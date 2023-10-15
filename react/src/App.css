@@ -15,21 +15,21 @@ body {
   background-size: cover;
   background-position: center;
   height: 200px; /* Default height */
-  border-radius: 10px 10px 0 0;
+  border-radius: 10px;
 }
 
 /* Adjust styles for smaller screens */
 @media (max-width: 767px) {
   .banner {
-    height: 150px; /* Adjusted height for smaller screens */
+    height: 100px; /* Adjusted height for smaller screens */
   }
 }
-
 .menu {
   width: 100%;
   display: flex;
+  flex-wrap: wrap; /* Allow the items to wrap to the next line on smaller screens */
   justify-content: center;
-  margin-bottom: 20px;
+  margin-top: 40px;
 }
 
 .menu ul {
@@ -37,20 +37,13 @@ body {
   padding: 0;
   margin: 0;
   display: flex;
+  flex-wrap: wrap; /* Allow the items to wrap to the next line on smaller screens */
 }
 
 .menu li {
   margin: 0 10px;
-}
-
-.menu button {
-  width: 100px; /* Adjust button width as needed */
-  height: 50px; /* Adjust button height as needed */
-  cursor: pointer;
-  border: 2px solid black; /* Black outline */
-  background-color: #3498db; /* Blue color for the buttons */
-  color: white; /* Text color */
-  font-size: 16px; /* Adjust font size as needed */
+  flex: 1; /* Allow items to grow and fill the space equally */
+  text-align: center; /* Center the text within each menu item */
 }
 
 .menu button.active {
@@ -58,9 +51,6 @@ body {
   color : black;
 }
 
-.menu button:hover {
-  background-color: #2980b9; /* Darker blue on hover */
-}
 
 .welcome-container {
   background-color: rgb(160, 203, 215);
@@ -125,49 +115,35 @@ h1 {
   color : #3498db
 }
 
+.options-container {
+  display: flex;
+  flex-direction: column; /* Stack buttons vertically */
+  gap: 10px; /* Add spacing between buttons */
+}
+
 .options {
   list-style: none;
   padding: 0;
 }
 
-.options button {
-  width: 100px; /* Adjust button width as needed */
-  height: 40px; /* Adjust button height as needed */
-  cursor: pointer;
-  border: 2px solid black; /* Black outline */
-  background-color: #3498db; /* Blue color for the buttons */
-  color: white; /* Text color */
-  font-size: 16px; /* Adjust font size as needed */
-}
-
-
-.explanation {
-  margin-top: 10px;
-  font-size: 1.1em;
-  color: #333;
-  border: 1px solid #ccc;
-  padding: 10px;
-  border-radius: 5px;
-}
-
 button {
-  padding: 10px 20px;
-  font-size: 1em;
+  display: block;
+  width: 100%;
+  margin-bottom: 40px;
   cursor: pointer;
-  background-color: #007BFF;
+  border: 2px solid black;
+  border-radius: 10px; /* Rounded edges */
+  background-color: #006ab0;
   color: white;
-  border: none;
-  border-radius: 5px;
-  margin-top: 20px;
+  font-size: 16px;
+  text-align: center;
+  padding: 10px;
 }
 
 button:hover {
   background-color: #0056b3;
 }
 
-button:focus {
-  outline: none;
-}
 
 .info-container {
   display: flex;
