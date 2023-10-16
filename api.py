@@ -9,7 +9,7 @@ def chat():
     context = request.json.get("data")
 
     
-    openai.api_key = "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"
+    openai.api_key = "sk-VnftvYTY7wpwJPz1zcBXT3BlbkFJo6RlK7GAS17X7X8wXWVNs"
     response = openai.ChatCompletion.create(
     model="gpt-3.5-turbo",
     messages=context

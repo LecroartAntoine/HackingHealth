@@ -10,7 +10,7 @@ import defaultSettings from './characters';
 
 
 const defaultOptions = {
-    apiKey: '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',
+    apiKey: 'sk-VnftvYTY7wpwJPz1zcBXT3BlbkFJo6RlK7GAS17X7X8wXWVNs',
     startingPrompt: `Tu parles à une personne qui cherche à avoir des informations générales sur la santé mentale. 
     Tu réponds UNIQUEMENT aux questions sur la santé mentale. Si la question n’a pas de rapport avec la santé mentale, tu ne dois pas y répondre.
     Tu ne dois pas parler des troubles neurodéveloppementaux : si on te pose une question sur ce sujet, tu dois orienter l’utilisateur vers des sites spécialisés tel que le site de l’OMS. 
@@ -58,7 +58,7 @@ const Options = () => {
     const startingPrompt = defaultOptions.startingPrompt;
 
     //Api key hook
-    const apiKey = "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"
+    const apiKey = "sk-VnftvYTY7wpwJPz1zcBXT3BlbkFJo6RlK7GAS17X7X8wXWVNs"
 
     const [userPrefix, setUserPrefix] = useState(Cookies.get("userPrefix") || defaultSettings.USER_PREFIX)
     const [AIPrefix, setAIPrefix] = useState(Cookies.get("AIPrefix") || defaultSettings.AI_PREFIX)
